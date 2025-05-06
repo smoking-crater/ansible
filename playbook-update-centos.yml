@@ -1,0 +1,15 @@
+---
+
+- hosts: centos
+  strategy: free
+
+
+  become: yes
+
+  tasks:
+    - name: Update packages
+      yum:
+         name: '*'
+         update_cache: yes
+         state: latest
+
