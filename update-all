@@ -1,0 +1,5 @@
+cd /root/prox-ansible
+/usr/bin/python /root/prox-ansible/get_prox_tags.py
+ansible-playbook -i inventory playbook-update-centos.yml
+ansible-playbook -i inventory playbook-update-ubuntu.yml
+
